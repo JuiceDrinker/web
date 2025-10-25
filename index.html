@@ -33,7 +33,7 @@
             <!-- Logo/Brand -->
             <div class="mb-8">
                 <h1 class="text-6xl md:text-7xl font-bold mb-4 tracking-tight">
-                    <span class="bg-gradient-to-r from-amber-200 via-yellow-400 to-amber-300 bg-clip-text text-transparent">
+                    <span class="bg-gradient-to-r from-slate-100 via-amber-100 to-slate-200 bg-clip-text text-transparent">
                         Ace Chess
                     </span>
                 </h1>
@@ -45,55 +45,64 @@
             <!-- Value Props -->
             <div class="mt-16 mb-12 grid md:grid-cols-3 gap-6 text-left">
                 <div class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-lg p-6">
-                    <div class="text-amber-400 text-2xl mb-3">⚡</div>
-                    <h3 class="text-lg font-semibold mb-2">Deep Analysis</h3>
-                    <p class="text-slate-400 text-sm">Advanced engine analysis with intuitive visualizations</p>
+                    <div class="w-10 h-10 bg-amber-500/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Seamlessly Analyse</h3>
+                    <p class="text-slate-400 text-sm">Lightning fast databases and integrated with the best tools</p>
                 </div>
                 <div class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-lg p-6">
-                    <div class="text-amber-400 text-2xl mb-3">📊</div>
+                    <div class="w-10 h-10 bg-amber-500/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
                     <h3 class="text-lg font-semibold mb-2">Track Progress</h3>
                     <p class="text-slate-400 text-sm">Identify patterns and improve your game systematically</p>
                 </div>
                 <div class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-lg p-6">
-                    <div class="text-amber-400 text-2xl mb-3">🎯</div>
-                    <h3 class="text-lg font-semibold mb-2">For Serious Players</h3>
-                    <p class="text-slate-400 text-sm">Built for players and coaches who want to level up</p>
+                    <div class="w-10 h-10 bg-amber-500/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Host your own data</h3>
+                    <p class="text-slate-400 text-sm">Offline, secure and private</p>
                 </div>
             </div>
 
             <!-- CTA Section -->
             <div class="mt-16 max-w-md mx-auto">
                 <div class="bg-slate-900/70 backdrop-blur-md border border-slate-700 rounded-xl p-8 shadow-2xl">
-                    <h2 class="text-2xl font-semibold mb-3">Join the Closed Beta</h2>
+                    <div class="inline-block bg-amber-500/10 text-amber-400 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+                        FREE
+                    </div>
+                    <h2 class="text-2xl font-semibold mb-3">
+                        Open Beta Waitlist
+                    </h2>
                     <p class="text-slate-400 mb-6 text-sm">
-                        Be among the first to experience the future of chess analysis
+                        Sign up to get early access when we launch
                     </p>
                     
-                    <form id="signup-form" class="space-y-4">
-                        <input 
-                            type="email" 
-                            id="email"
-                            placeholder="your@email.com" 
-                            required
-                            class="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white placeholder-slate-500"
-                        />
-                        <button 
-                            type="submit"
-                            class="w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-900 font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-amber-500/50"
-                        >
-                            Request Early Access
-                        </button>
-                    </form>
+                    <a 
+                        href="https://forms.gle/sch2fAu5QoDNv38N8"
+                        target="_blank"
+                        class="block w-full bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-amber-600/30 text-center"
+                    >
+                        Join 
+                    </a>
                     
                     <p class="text-xs text-slate-500 mt-4">
-                        Limited spots available. No spam, ever.
+                        Free forever. No credit card required.
                     </p>
                 </div>
             </div>
 
             <!-- Social Proof / Trust Element -->
             <div class="mt-16 text-slate-500 text-sm">
-                <p>Designed for players rated 1200+ and chess coaches</p>
+                <p>Designed for the ambitious player</p>
             </div>
         </div>
     </div>
@@ -104,21 +113,6 @@
             <p>&copy; 2025 Ace Chess. All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
-        document.getElementById('signup-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = document.getElementById('email').value;
-            
-            // Replace this with your actual form handling
-            // Options: Mailchimp, Tally, Google Forms, or a simple backend endpoint
-            console.log('Email submitted:', email);
-            
-            // Show success message
-            alert('Thanks for signing up! We\'ll be in touch soon.');
-            document.getElementById('email').value = '';
-        });
-    </script>
 
 </body>
 </html>
