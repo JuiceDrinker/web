@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace Chess - Modern Chess Analysis Software</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-chess {
+            background-image: url('chess-background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.92) 0%, rgba(15, 23, 42, 0.88) 50%, rgba(30, 41, 59, 0.85) 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-white">
+    
+    <!-- Hero Section -->
+    <div class="relative min-h-screen flex items-center justify-center bg-chess">
+        <div class="absolute inset-0 gradient-overlay"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto px-6 py-20 text-center">
+            <!-- Logo/Brand -->
+            <div class="mb-8">
+                <h1 class="text-6xl md:text-7xl font-bold mb-4 tracking-tight">
+                    <span class="bg-gradient-to-r from-amber-200 via-yellow-400 to-amber-300 bg-clip-text text-transparent">
+                        Ace Chess
+                    </span>
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-300 font-light">
+                    Modern chess software to analyze your games
+                </p>
+            </div>
+
+            <!-- Value Props -->
+            <div class="mt-16 mb-12 grid md:grid-cols-3 gap-6 text-left">
+                <div class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-lg p-6">
+                    <div class="text-amber-400 text-2xl mb-3">⚡</div>
+                    <h3 class="text-lg font-semibold mb-2">Deep Analysis</h3>
+                    <p class="text-slate-400 text-sm">Advanced engine analysis with intuitive visualizations</p>
+                </div>
+                <div class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-lg p-6">
+                    <div class="text-amber-400 text-2xl mb-3">📊</div>
+                    <h3 class="text-lg font-semibold mb-2">Track Progress</h3>
+                    <p class="text-slate-400 text-sm">Identify patterns and improve your game systematically</p>
+                </div>
+                <div class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-lg p-6">
+                    <div class="text-amber-400 text-2xl mb-3">🎯</div>
+                    <h3 class="text-lg font-semibold mb-2">For Serious Players</h3>
+                    <p class="text-slate-400 text-sm">Built for players and coaches who want to level up</p>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="mt-16 max-w-md mx-auto">
+                <div class="bg-slate-900/70 backdrop-blur-md border border-slate-700 rounded-xl p-8 shadow-2xl">
+                    <h2 class="text-2xl font-semibold mb-3">Join the Closed Beta</h2>
+                    <p class="text-slate-400 mb-6 text-sm">
+                        Be among the first to experience the future of chess analysis
+                    </p>
+                    
+                    <form id="signup-form" class="space-y-4">
+                        <input 
+                            type="email" 
+                            id="email"
+                            placeholder="your@email.com" 
+                            required
+                            class="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white placeholder-slate-500"
+                        />
+                        <button 
+                            type="submit"
+                            class="w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-900 font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-amber-500/50"
+                        >
+                            Request Early Access
+                        </button>
+                    </form>
+                    
+                    <p class="text-xs text-slate-500 mt-4">
+                        Limited spots available. No spam, ever.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Social Proof / Trust Element -->
+            <div class="mt-16 text-slate-500 text-sm">
+                <p>Designed for players rated 1200+ and chess coaches</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Footer -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-8">
+        <div class="max-w-4xl mx-auto px-6 text-center text-slate-500 text-sm">
+            <p>&copy; 2025 Ace Chess. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            
+            // Replace this with your actual form handling
+            // Options: Mailchimp, Tally, Google Forms, or a simple backend endpoint
+            console.log('Email submitted:', email);
+            
+            // Show success message
+            alert('Thanks for signing up! We\'ll be in touch soon.');
+            document.getElementById('email').value = '';
+        });
+    </script>
+
+</body>
+</html>
